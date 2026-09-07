@@ -48,6 +48,7 @@ async fn main() -> Result<()> {
 
 - [deboa_extras](https://crates.io/crates/deboa_extras)
 - [deboa_fory](https://crates.io/crates/deboa_fory)
+- [deboa_hickory](https://crates.io/crates/deboa_hickory)
 
 ## Blog Posts
 

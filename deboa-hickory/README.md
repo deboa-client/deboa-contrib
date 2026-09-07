@@ -11,7 +11,7 @@ Either run from command line:
 Or add to your `Cargo.toml`:
 
 ```toml
-deboa-fory = "0.1.1"
+deboa-hickory = "0.1.1"
 ```
 
 ## Usage

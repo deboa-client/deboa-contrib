@@ -19,6 +19,7 @@ Please refer to the individual crate documentation for details:
 
 - [deboa-extras](./deboa-extras#features)
 - [deboa-fory](./deboa-fory#features)
+- [deboa-hickory](./deboa-hickory#features)
 
 ## Quick Start
 
@@ -26,6 +27,7 @@ Please refer to the individual crate documentation for quick start guides:
 
 - [deboa-extras](./deboa-extras#quick-start)
 - [deboa-fory](./deboa-fory#quick-start)
+- [deboa-hickory](./deboa-hickory#quick-start)
 
 ## Crates
 
@@ -33,6 +35,7 @@ Please refer to the individual crate documentation for quick start guides:
 |-------|-------------|---------------|
 | [deboa-extras](./deboa-extras) | DRY REST client wrapper | [![docs.rs](https://img.shields.io/docsrs/deboa-extras/latest)](https://docs.rs/deboa-extras) |
 | [deboa-fory](./deboa-fory) | Form encoding and decoding | [![docs.rs](https://img.shields.io/docsrs/deboa-fory/latest)](https://docs.rs/deboa-fory) |
+| [deboa-hickory](./deboa-hickory) | Hickory Resolver support | [![docs.rs](https://img.shields.io/docsrs/deboa-hickory/latest)](https://docs.rs/deboa-hickory) |
 
 ## Create project from template
 
