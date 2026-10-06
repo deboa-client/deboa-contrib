@@ -17,6 +17,6 @@ default = []
 
 [dependencies]
 deboa = { workspace = true, default-features = false }
-fory = "1.7.1"
-fory-core = "1.7.1"
+fory = "1.7.6"
+fory-core = "1.7.6"
 http = { workspace = true }

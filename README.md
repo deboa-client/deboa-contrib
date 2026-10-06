@@ -36,7 +36,7 @@ async fn main() -> Result<()> {
 }
 ```
 
-## Subprojects
+## Subcrates
 
 ### [deboa-extras](https://github.com/deboa-client/deboa-contrib/tree/main/deboa-extras)
 

@@ -18,13 +18,14 @@ license = "MIT OR Apache-2.0"
 rust-version = "1.85.0"
 
 [workspace.dependencies]
-#deboa = { path = "../deboa/deboa", default-features = false }
-deboa = { version = "0.1.5-beta.2", default-features = false }
+deboa = { path = "../deboa/deboa", default-features = false }
+#deboa = { version = "0.1.5-beta.2", default-features = false }
 deboa-extras = { path = "deboa-extras" }
 deboa-fory = { path = "deboa-fory" }
 http = { version = "1.5.0", default-features = false }
 http-body-util = { version = "0.1.5", default-features = false }
-hyper-body-utils = { version = "0.1.17" }
+hyper-body-utils = { path = "../hyper-body-utils" }
+#hyper-body-utils = { version = "0.1.17" }
 
 [profile.test]
 lto = false
