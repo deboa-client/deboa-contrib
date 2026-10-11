@@ -1,6 +1,6 @@
 [package]
 name = "deboa-extras"
-version = "0.1.1-beta.2"
+version = "0.1.1-beta.3"
 edition.workspace = true
 authors.workspace = true
 repository.workspace = true
@@ -82,20 +82,12 @@ thiserror = "2.0.17"
 url = "2.5.8"
 
 [dev-dependencies]
-caramelo = "0.1.4"
-deboa-tokio = { path = "../../deboa-tokio/deboa-tokio", default-features = false, features = [
+caramelo = "0.1.5"
+deboa-tokio = { version = "0.1.4-beta.4", default-features = false, features = [
   "http2",
-  #"http1",
   "rust-tls",
   "default-rustls-provider",
   "default-rustls-verifier",
 ] }
-# deboa-tokio = { version = "0.1.4-beta.3", default-features = false, features = [
-#   "http2",
-#   #"http1",
-#   "rust-tls",
-#   "default-rustls-provider",
-#   "default-rustls-verifier",
-# ] }
 env_logger = "0.11.11"
 tokio = { version = "1.52.3", features = ["macros", "rt-multi-thread"] }
