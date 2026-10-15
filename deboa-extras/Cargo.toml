@@ -59,7 +59,7 @@ flexbuffers = { version = "25.12.19", optional = true, default-features = false 
 futures = { version = "0.3.34", default-features = false, features = ["std"] }
 http = { workspace = true, optional = true }
 hyper = { version = "1.11.1", optional = true, default-features = false }
-hyper-body-utils = { workspace = true, optional = true, default-features = false }
+hyper-body-utils = { workspace = true, optional = true }
 log = { version = "0.4.33", optional = true, default-features = false }
 mime_typed = "0.1.7"
 pin-project-lite = "0.2.16"
