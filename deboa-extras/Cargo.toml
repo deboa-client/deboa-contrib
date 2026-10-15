@@ -1,12 +1,12 @@
 [package]
 name = "deboa-extras"
-version = "0.1.1-beta.3"
+version = "0.1.1-beta.4"
 edition.workspace = true
 authors.workspace = true
 repository.workspace = true
 homepage.workspace = true
 description = "deboa extras (serialization, compression, websockets, streams, catchers (middleware) and sse support)."
-readme.workspace = true
+readme = "README.md"
 license.workspace = true
 keywords = ["http", "serialization", "compression", "websockets", "sse"]
 publish = true
