@@ -1,12 +1,12 @@
 [package]
 name = "deboa-hickory"
-version = "0.1.2-beta.1"
+version = "0.1.2-beta.2"
 description = "Hickory DNS resolver for Deboa"
 edition.workspace = true
 authors.workspace = true
 repository.workspace = true
 homepage.workspace = true
-readme.workspace = true
+readme = "README.md"
 license.workspace = true
 rust-version.workspace = true
 

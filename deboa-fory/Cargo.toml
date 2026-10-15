@@ -1,12 +1,12 @@
 [package]
 name = "deboa-fory"
-version = "0.1.8-beta.2"
+version = "0.1.8-beta.3"
 edition.workspace = true
 authors.workspace = true
 repository.workspace = true
 homepage.workspace = true
 description = "Apache Fory serializer support for Deboa"
-readme.workspace = true
+readme = "README.md"
 license.workspace = true
 keywords = ["http", "networking", "rest", "serializer", "fory"]
 publish = true
