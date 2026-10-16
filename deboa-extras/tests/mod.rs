@@ -2,12 +2,12 @@ use caramelo::{
     expect,
     matchers::{eq, err},
 };
-use deboa::{request::get, TestResult};
+use deboa::TestResult;
 use deboa_extras::hook::{
     redirect::Redirect,
     retry::{Retry, Sleeper},
 };
-use deboa_tokio::Client;
+use deboa_tokio::{Client, request::get};
 use http::Version;
 
 #[tokio::test]

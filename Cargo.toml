@@ -18,7 +18,7 @@ license = "MIT OR Apache-2.0"
 rust-version = "1.88.0"
 
 [workspace.dependencies]
-deboa = { version = "0.1.5-beta.5", default-features = false }
+deboa = { version = "0.1.5-beta.6", default-features = false }
 deboa-extras = { path = "deboa-extras" }
 deboa-fory = { path = "deboa-fory" }
 http = { version = "1.5.0", default-features = false }

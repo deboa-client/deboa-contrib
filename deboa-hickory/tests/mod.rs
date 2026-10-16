@@ -4,9 +4,9 @@ use deboa_extras::serde::json::JsonBody;
 use deboa_hickory::HickoryDnsResolver;
 use deboa_tokio::CustomClient;
 use hickory_resolver::{
-    config::{ResolverConfig, ResolverOpts, GOOGLE},
-    net::runtime::TokioRuntimeProvider,
     Hosts, TokioResolver,
+    config::{GOOGLE, ResolverConfig, ResolverOpts},
+    net::runtime::TokioRuntimeProvider,
 };
 use http::header;
 use once_cell::sync::Lazy;

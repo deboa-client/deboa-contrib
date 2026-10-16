@@ -1,6 +1,6 @@
 [package]
 name = "deboa-hickory"
-version = "0.1.2-beta.2"
+version = "0.1.2-beta.3"
 description = "Hickory DNS resolver for Deboa"
 edition.workspace = true
 authors.workspace = true
@@ -35,7 +35,7 @@ tokio = { version = "1.52.3" }
 
 [dev-dependencies]
 deboa-extras.workspace = true
-deboa-tokio = { version = "0.1.4-beta.5" }
+deboa-tokio = { path = "../../deboa-tokio/deboa-tokio" }
 serde = "1.0.228"
 serde_json = "1.0.150"
 tokio = { version = "1.53.2", features = ["macros", "rt-multi-thread"] }

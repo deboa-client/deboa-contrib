@@ -1,10 +1,10 @@
 #![doc = include_str!("../README.md")]
 #![deny(missing_docs)]
 use deboa::{
+    Result,
     errors::{ContentError, DeboaError},
     request::DeboaRequestBuilder,
     response::DeboaResponse,
-    Result,
 };
 use fory::{Fory, Serializer};
 use http::header;
