@@ -1,9 +1,9 @@
 use std::io::Cursor;
 
 use deboa::{
+    Result,
     errors::{ContentError, DeboaError},
     serde::{RequestBody, ResponseBody},
-    Result,
 };
 use mime_typed::{MimeStrExt, TextXml};
 use serde::{Deserialize, Serialize};

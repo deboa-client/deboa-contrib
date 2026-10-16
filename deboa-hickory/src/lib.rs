@@ -1,15 +1,15 @@
 use deboa::{
+    Result,
     dns::{DnsResolver, DnsResponse},
     errors::{DeboaError, DnsError},
-    Result,
 };
 use hickory_resolver::{
+    Resolver,
     net::runtime::RuntimeProvider,
     proto::rr::{
-        rdata::{svcb::SvcParamKey, HTTPS},
         RecordData, RecordType,
+        rdata::{HTTPS, svcb::SvcParamKey},
     },
-    Resolver,
 };
 use http::Version;
 use rand::seq::SliceRandom;

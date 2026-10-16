@@ -1,4 +1,4 @@
-use deboa::{errors::DeboaError, response::DeboaResponse, Result};
+use deboa::{Result, errors::DeboaError, response::DeboaResponse};
 use mime_typed::MimeStrExt;
 
 use crate::http::sse::io::stream::ServerEventStream;

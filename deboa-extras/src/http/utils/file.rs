@@ -1,7 +1,7 @@
 use deboa::{
+    Result,
     errors::{DeboaError, IoError},
     response::DeboaResponse,
-    Result,
 };
 use futures::StreamExt;
 use std::{fs::File, io::Write, path::Path};

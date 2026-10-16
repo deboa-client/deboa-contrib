@@ -1,9 +1,9 @@
 use deboa::{
+    Result,
     request::{DeboaRequest, DeboaRequestBuilder},
     url::IntoUrl,
-    Result,
 };
-use http::{header, Method};
+use http::{Method, header};
 use mime_typed::{MimeStrExt, TextEventStream};
 
 /// Trait to convert a DeboaRequestBuilder into a SSE request.

@@ -1,6 +1,6 @@
 use crate::http::sse::request::ServerSentEventBuilder;
-use deboa::{request::DeboaRequestBuilder, Result};
-use http::{header, HeaderValue, Method, Uri};
+use deboa::{Result, request::DeboaRequestBuilder};
+use http::{HeaderValue, Method, Uri, header};
 use mime_typed::{MimeStrExt, TextEventStream};
 
 #[test]

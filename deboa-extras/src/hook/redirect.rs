@@ -23,10 +23,10 @@
 //! let hook = RedirectHook::new(MyHook);
 //! ```
 use deboa::{
+    Result,
     errors::{DeboaError, RequestError},
     request::DeboaRequest,
     response::DeboaResponse,
-    Result,
 };
 use http::{StatusCode, Uri};
 use hyper_body_utils::HttpBody;

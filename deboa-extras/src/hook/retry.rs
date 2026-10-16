@@ -10,10 +10,10 @@
 //!```
 use crate::hook::retry::strategy::FixedIntervalRetryStrategy;
 use deboa::{
+    Result,
     errors::{DeboaError, RequestError},
     request::DeboaRequest,
     response::DeboaResponse,
-    Result,
 };
 use http::StatusCode;
 use hyper_body_utils::HttpBody;

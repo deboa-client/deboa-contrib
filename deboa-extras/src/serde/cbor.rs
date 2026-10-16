@@ -1,7 +1,7 @@
 use deboa::{
+    Result,
     errors::{ContentError, DeboaError},
     serde::{RequestBody, ResponseBody},
-    Result,
 };
 use serde::{Deserialize, Serialize};
 use std::io::Cursor;
