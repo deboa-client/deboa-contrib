@@ -132,6 +132,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "async-stream"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0b5a71a6f37880a80d1d7f19efd781e4b5de42c88f0722cc13bcb6cc2cfe8476"
+dependencies = [
+ "async-stream-impl",
+ "futures-core",
+ "pin-project-lite",
+]
+
+[[package]]
+name = "async-stream-impl"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c7c24de15d275a1ecfd47a380fb4d5ec9bfe0933f309ed5e705b775596a3574d"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.119",
+]
+
+[[package]]
 name = "async-trait"
 version = "0.1.92"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -340,16 +362,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cookie"
-version = "0.18.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1a373e3602691c3cdea496d2f0ee5935151e6168fe87739483c463db1b2f2f87"
-dependencies = [
- "time",
- "version_check",
-]
-
-[[package]]
 name = "core-foundation"
 version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -437,24 +449,19 @@ checksum = "4583a4551df46e2792f82ceeac45e850d2e2d5debba0b91f102385cda5b11f06"
 
 [[package]]
 name = "deboa"
-version = "0.1.5-beta.5"
+version = "0.1.5-beta.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "395f954c4cfd84d010b7dc7d02ea67f24dd0af799f231c0c0a0ec293520fec46"
+checksum = "bbd4900884b33396090a6f70406d81dd361fcfc15a840968172269f8aa9aa883"
 dependencies = [
- "async-fn-stream",
  "async-lock",
  "base64",
  "bytes",
- "cookie",
- "futures",
  "hashbrown 0.17.1",
  "http",
- "http-body",
  "http-body-util",
  "hyper",
  "hyper-body-utils",
  "log",
- "rand",
  "regex",
  "serde",
  "tackle",
@@ -505,21 +512,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "deboa-h3"
-version = "0.1.3-beta.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "65b0668a05f777caaff0748299b342cbb7ef93e0fc1d3de3f3aadf2938a7bcf3"
-dependencies = [
- "bytes",
- "deboa",
- "h3",
- "h3-quinn",
- "http",
- "http-body-util",
- "hyper-body-utils",
-]
-
-[[package]]
 name = "deboa-hickory"
 version = "0.1.2-beta.2"
 dependencies = [
@@ -536,10 +528,27 @@ dependencies = [
 ]
 
 [[package]]
-name = "deboa-tls"
-version = "0.1.0-beta.4"
+name = "deboa-multipart"
+version = "0.1.0-beta.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7888362295e39f4965bcbb863e864d6b9e21501ae4851477bcc65df048a82910"
+checksum = "94bb25918cc515041a757e0a05acafaeef298d48ea6a84b634e4ab75b6f94c2e"
+dependencies = [
+ "async-lock",
+ "async-stream",
+ "base64",
+ "bytes",
+ "deboa",
+ "futures",
+ "http-body",
+ "http-body-util",
+ "rand",
+]
+
+[[package]]
+name = "deboa-tls"
+version = "0.1.0-beta.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6f71cee433cac4b3f44ef063fdf8fd6f55fc179ff7d2ddf3bb1ad7fd6c93f406"
 dependencies = [
  "deboa",
  "futures-io",
@@ -552,17 +561,14 @@ dependencies = [
 
 [[package]]
 name = "deboa-tokio"
-version = "0.1.4-beta.5"
+version = "0.1.4-beta.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8b060530cb7107a372f792daa25e2a7839586df4e5a06f8f562da09c172a781b"
+checksum = "91280d592ed64f6e8ab53461fe7cf8e667d1b1e4307faedc68f83c0c89bf506e"
 dependencies = [
  "deboa",
- "deboa-h3",
+ "deboa-multipart",
  "deboa-tls",
  "deboa-ws",
- "futures",
- "h3",
- "h3-quinn",
  "hashbrown 0.17.1",
  "http",
  "hyper",
@@ -581,16 +587,14 @@ dependencies = [
 
 [[package]]
 name = "deboa-ws"
-version = "0.1.0-beta.4"
+version = "0.1.0-beta.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e23ae8a4383a101403c6ed5fef95567c658f4bb592b5af45fbe9bfcecc48f3c9"
+checksum = "66c79fa63e3e63ba3661dc5bd095ba3b6f66bbaa20005cca2de84d6bf450aa67"
 dependencies = [
  "base64",
  "deboa",
- "futures-util",
  "http",
  "hyper",
- "hyper-body-utils",
  "hyper-util",
  "pin-project-lite",
  "rand",
@@ -2670,7 +2674,6 @@ dependencies = [
  "powerfmt",
  "serde_core",
  "time-core",
- "time-macros",
 ]
 
 [[package]]
@@ -2678,16 +2681,6 @@ name = "time-core"
 version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9e1c906769ad99c88eaa54e728060edef082f8e358ff32030cb7c7d315e81109"
-
-[[package]]
-name = "time-macros"
-version = "0.2.32"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e689342a48d2ea927c87ea50cabf8594854bf940e9310208848d680d668ed85"
-dependencies = [
- "num-conv",
- "time-core",
-]
 
 [[package]]
 name = "tinystr"
@@ -2707,9 +2700,9 @@ checksum = "fd3ca314f692efd6c868f8408f53fe444634a845f96c028b97d35f6a1f79f0ee"
 
 [[package]]
 name = "tokio"
-version = "1.53.2"
+version = "1.53.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e95f91fcc7a621e8b030f6aa23c71fe9838ae2fb4d8118b75602a328f5144044"
+checksum = "ce3335fa71841cda333a58d7615b03901380ecf09d59b3296d21f8bbac0dde4e"
 dependencies = [
  "bytes",
  "libc",
