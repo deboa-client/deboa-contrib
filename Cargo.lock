@@ -479,7 +479,7 @@ dependencies = [
  "caramelo",
  "ciborium",
  "deboa",
- "deboa-tokio 0.1.4-beta.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "deboa-tokio",
  "env_logger",
  "flate2",
  "flexbuffers",
@@ -517,7 +517,7 @@ version = "0.1.2-beta.4"
 dependencies = [
  "deboa",
  "deboa-extras",
- "deboa-tokio 0.1.4-beta.8",
+ "deboa-tokio",
  "hickory-resolver",
  "http",
  "once_cell",
@@ -562,36 +562,13 @@ dependencies = [
 [[package]]
 name = "deboa-tokio"
 version = "0.1.4-beta.8"
-dependencies = [
- "deboa",
- "deboa-multipart",
- "deboa-tls",
- "deboa-ws",
- "hashbrown 0.17.1",
- "http",
- "hyper",
- "hyper-body-utils",
- "hyper-util",
- "log",
- "quinn",
- "rand",
- "rustls",
- "rustls-native-certs",
- "rustls-pki-types",
- "tokio",
- "tokio-rustls",
- "webpki-roots",
-]
-
-[[package]]
-name = "deboa-tokio"
-version = "0.1.4-beta.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "91280d592ed64f6e8ab53461fe7cf8e667d1b1e4307faedc68f83c0c89bf506e"
 dependencies = [
  "deboa",
  "deboa-multipart",
  "deboa-tls",
+ "deboa-ws",
  "hashbrown 0.17.1",
  "http",
  "hyper",
