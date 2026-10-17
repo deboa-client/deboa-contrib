@@ -1,6 +1,6 @@
 [package]
 name = "deboa-extras"
-version = "0.1.1-beta.5"
+version = "0.1.1-beta.6"
 edition.workspace = true
 authors.workspace = true
 repository.workspace = true
@@ -77,7 +77,7 @@ url = "2.5.8"
 
 [dev-dependencies]
 caramelo = "0.1.5"
-deboa-tokio = { version = "0.1.4-beta.7", default-features = false, features = [
+deboa-tokio = { version = "0.1.4-beta.8", default-features = false, features = [
   "http2",
   "rust-tls",
   "default-rustls-provider",
