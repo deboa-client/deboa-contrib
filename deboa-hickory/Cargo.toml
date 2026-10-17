@@ -1,6 +1,6 @@
 [package]
 name = "deboa-hickory"
-version = "0.1.2-beta.3"
+version = "0.1.2-beta.4"
 description = "Hickory DNS resolver for Deboa"
 edition.workspace = true
 authors.workspace = true

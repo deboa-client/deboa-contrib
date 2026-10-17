@@ -1,6 +1,6 @@
 [package]
 name = "deboa-fory"
-version = "0.1.8-beta.4"
+version = "0.1.8-beta.5"
 edition.workspace = true
 authors.workspace = true
 repository.workspace = true
