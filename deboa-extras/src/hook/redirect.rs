@@ -1,27 +1,5 @@
 //! A hook that redirects requests to another hook.
-//!
 //! This is useful for forwarding requests to other hooks.
-//!
-//! # Example
-//!
-//! ```
-//! use deboa::{DeboaRequest, DeboaResponse};
-//! use deboa_extras::hook::RedirectHook;
-//! use tackle::Hook;
-//!
-//! struct MyHook;
-//!
-//! impl Hook<DeboaRequest, DeboaResponse> for MyHook {
-//!     type Result = Result<DeboaResponse>;
-//!     type Error = deboa::errors::DeboaError;
-//!
-//!     async fn call(&self, input: DeboaRequest) -> Self::Result {
-//!         Ok(DeboaResponse::new("Hello, world!"))
-//!     }
-//! }
-//!
-//! let hook = RedirectHook::new(MyHook);
-//! ```
 use deboa::{
     Result,
     errors::{DeboaError, RequestError},
