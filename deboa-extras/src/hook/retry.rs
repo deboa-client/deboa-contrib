@@ -1,13 +1,5 @@
 //! A module that contains hooks for retrying requests.
 //! This is useful for retrying requests that fail due to transient errors.
-//!
-//! # Example
-//! ```
-//! use deboa::{DeboaRequest, DeboaResponse};
-//! use deboa_extras::hook::Retry;
-//! use tackle::Hook;
-//!
-//!```
 use crate::hook::retry::strategy::FixedIntervalRetryStrategy;
 use deboa::{
     Result,
