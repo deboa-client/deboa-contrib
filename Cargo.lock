@@ -805,9 +805,9 @@ dependencies = [
 
 [[package]]
 name = "fory"
-version = "1.7.7"
+version = "1.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f61037c8904dfb16de91b48d05f47cad944dacd5c9a09cba43aba3e74a74ec31"
+checksum = "0f9a05b3bfe0d011f924068841cec0213172b217c93dec3d4019154603a5f2c3"
 dependencies = [
  "fory-core",
  "fory-derive",
@@ -815,23 +815,23 @@ dependencies = [
 
 [[package]]
 name = "fory-core"
-version = "1.7.7"
+version = "1.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "07d0c722a372a8f1b602a29217ddbecd436f3cd0a869d3033d0ac0a4891b0f35"
+checksum = "dd125f383c178943a8dafc9e17f44b63c9c9860b04ba26525c249904c88e5746"
 dependencies = [
  "byteorder",
  "num-bigint",
  "num-traits",
  "num_enum",
- "paste",
+ "pastey",
  "thiserror 1.0.69",
 ]
 
 [[package]]
 name = "fory-derive"
-version = "1.7.7"
+version = "1.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a38b6c29f8396eb2a90cdae00d698d1085ec2d275ef230de8fc1ccf1ec30dd06"
+checksum = "bc38d5a37809c9a3658d64967e81d9573af77b872a3fbca09f74ceb8c2ad2e33"
 dependencies = [
  "fory-core",
  "proc-macro-crate",
@@ -1801,10 +1801,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "paste"
-version = "1.0.15"
+name = "pastey"
+version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
+checksum = "2ee67f1008b1ba2321834326597b8e186293b049a023cdef258527550b9935b4"
 
 [[package]]
 name = "percent-encoding"
